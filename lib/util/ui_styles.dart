@@ -16,9 +16,10 @@ const String welcomeBgImg = "assets/img/welcome_img_cropped2.jpg";
 const String appLogoImg = "assets/img/appLogo.png";
 
 //----------------- COLORS
-const Color kYellowLight = Color(0XFFFFF6D3);
-const Color kMainOrange = Color(0XFFEA8F3C);
-const Color fbMainColor = Color(0XFF3855EE);
+const Color kYellowLight = Color(0xFFFFF6D3);
+const Color kMainOrange = Color(0xFFEA8F3C);
+const Color fbMainColor = Color(0xFF3855EE);
+const Color kMainTextColor = Color(0xFFFFF5D2);
 
 //------------------ TEXT StyleElement
 const TextStyle commonTS = TextStyle(fontFamily: fontRaleway, color: Colors.black);
