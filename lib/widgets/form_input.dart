@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jam_jam/util/ui_styles.dart';
+import 'package:jam_jam/util/styles.dart';
 
 class FormInput extends StatefulWidget{
   final String labelText;
@@ -34,7 +34,7 @@ class _FormInputState extends State<FormInput> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Container(
-                padding: EdgeInsets.symmetric(horizontal: sWidth(context,10)),
+                padding: EdgeInsets.symmetric(horizontal: mqWidth(context,10)),
                 child: Text(widget.labelText,style: loginLabelsTS,)
             )
           ],
@@ -44,13 +44,13 @@ class _FormInputState extends State<FormInput> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Container(
-              padding: EdgeInsets.symmetric(horizontal: sWidth(context,10)),
+              padding: EdgeInsets.symmetric(horizontal: mqWidth(context,10)),
               child: Container(
                 padding: EdgeInsets.symmetric(horizontal: 10),
                 decoration: BoxDecoration(
                     border: Border.all(color: kMainOrange, width: 2)
                 ),
-                width: sWidth(context,80),
+                width: mqWidth(context,80),
                 child: TextFormField(
                   keyboardType: widget.keyboardType,
                   controller: widget.controller,

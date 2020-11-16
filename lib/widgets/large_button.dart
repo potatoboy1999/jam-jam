@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jam_jam/util/ui_styles.dart';
+import 'package:jam_jam/util/styles.dart';
 
 class LargeButton extends StatefulWidget{
   @required VoidCallback onPressed;

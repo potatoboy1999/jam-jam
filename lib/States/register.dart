@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:jam_jam/widgets/FormInput.dart';
-import 'package:jam_jam/widgets/LargeButton.dart';
+import 'package:jam_jam/widgets/form_input.dart';
+import 'package:jam_jam/widgets/large_button.dart';
 import 'package:jam_jam/States/login.dart';
 import 'package:jam_jam/States/welcome.dart';
-import 'package:jam_jam/util/ui_styles.dart';
+import 'package:jam_jam/util/styles.dart';
 
 class RegisterPage extends StatefulWidget {
   static final String id = "register_page";
@@ -43,7 +43,7 @@ class _RegisterPageState extends State<RegisterPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(height: sHeight(context, 15),),
+                SizedBox(height: mqHeight(context, 15),),
                 // INPUT NAME
                 FormInput(
                   labelText: "Nombre",
@@ -89,10 +89,10 @@ class _RegisterPageState extends State<RegisterPage> {
                 Row(
                   children: [
                     Container(
-                      padding: EdgeInsets.symmetric(horizontal: sWidth(context,10)),
+                      padding: EdgeInsets.symmetric(horizontal: mqWidth(context,10)),
                       child: LargeButton(
                         height: 45,
-                        width: sWidth(context, 80),
+                        width: mqWidth(context, 80),
                         text: "Registrar",
                         bg_color: kMainOrange,
                         onPressed: (){
@@ -102,7 +102,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                   ],
                 ),
-                SizedBox(height: sHeight(context, 5),),
+                SizedBox(height: mqHeight(context, 5),),
               ],
             ),
           ),

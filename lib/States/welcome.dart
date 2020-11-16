@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:jam_jam/widgets/LargeButton.dart';
+import 'package:jam_jam/widgets/large_button.dart';
 import 'package:jam_jam/States/login.dart';
 import 'package:jam_jam/States/register.dart';
-import 'package:jam_jam/util/ui_styles.dart';
+import 'package:jam_jam/util/styles.dart';
 
 class WelcomePage extends StatefulWidget{
   WelcomePage({Key key}):super(key: key);

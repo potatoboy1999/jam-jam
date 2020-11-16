@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:jam_jam/widgets/LargeButton.dart';
+import 'package:jam_jam/widgets/large_button.dart';
 import 'package:jam_jam/States/home.dart';
-import 'package:jam_jam/util/ui_styles.dart';
+import 'package:jam_jam/util/styles.dart';
 
 class LoginPage extends StatefulWidget {
   static final String id = "login_page";
@@ -23,7 +23,7 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    double paddingHorizontal = sWidth(context, 10);
+    double paddingHorizontal = mqWidth(context, 10);
     return Container(
       decoration: loginBoxDecoration,
       child: Scaffold(
@@ -36,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                SizedBox(height: sHeight(context, 10),), //80
+                SizedBox(height: mqHeight(context, 10),), //80
                 // LOGO
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -48,7 +48,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ],
                 ),
-                SizedBox(height: sHeight(context, 14),),
+                SizedBox(height: mqHeight(context, 14),),
                 // LABEL EMAIL
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -70,7 +70,7 @@ class _LoginPageState extends State<LoginPage> {
                         decoration: BoxDecoration(
                           border: Border.all(color: kMainOrange, width: 2)
                         ),
-                        width: sWidth(context,80),
+                        width: mqWidth(context,80),
                         child: TextFormField(
                           keyboardType: TextInputType.emailAddress,
                           controller: emailController,
@@ -110,7 +110,7 @@ class _LoginPageState extends State<LoginPage> {
                         decoration: BoxDecoration(
                             border: Border.all(color: kMainOrange, width: 2)
                         ),
-                        width: sWidth(context,80),
+                        width: mqWidth(context,80),
                         child: TextFormField(
                           controller: passwordController,
                           obscureText: true,
@@ -147,7 +147,7 @@ class _LoginPageState extends State<LoginPage> {
                       padding: EdgeInsets.symmetric(horizontal: paddingHorizontal),
                       child: LargeButton(
                         height: 45,
-                        width: sWidth(context, 80),
+                        width: mqWidth(context, 80),
                         text: "Ingresar",
                         bg_color: kMainOrange,
                         onPressed: (){
@@ -157,7 +157,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ],
                 ),
-                SizedBox(height: sHeight(context, 10),), //80
+                SizedBox(height: mqHeight(context, 10),), //80
                 // Spacer(),
               ],
             ),
